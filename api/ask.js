@@ -14,7 +14,7 @@ return res.status(400).json({ error: "No message provided" });
 }
 
 const openai = new OpenAI({
-apiKey: process.env.OPENAI_KEY,
+apiKey: process.env.OPENAI_API_KEY,
 });
 
 let systemPrompt = "";
